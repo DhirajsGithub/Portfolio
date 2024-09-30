@@ -1,13 +1,45 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
+import {Container, Row, Col} from "react-bootstrap";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import ProjectCards from "./ProjectCards";
+
+import i1 from "../../Assets/Projects/skill-shodh/Login Users.png"
+import i2 from "../../Assets/Projects/skill-shodh/Notification View.png"
+import i3 from "../../Assets/Projects/skill-shodh/Public Profile.png"
+import i4 from "../../Assets/Projects/skill-shodh/opportunity.png"
+import i5 from "../../Assets/Projects/skill-shodh/Onbarding Extended.png"
+import i6 from "../../Assets/Projects/skill-shodh/Creating Opportunites.png"
+import i7 from "../../Assets/Projects/skill-shodh/Chat Ui.png"
+import i8 from "../../Assets/Projects/skill-shodh/Applying Oppurtuinites.png"
+import i9 from "../../Assets/Projects/skill-shodh/create-team.png"
+import i10 from "../../Assets/Projects/skill-shodh/join-team.png"
+import i11 from "../../Assets/Projects/skill-shodh/Privacy.png"
+
+import s1 from "../../Assets/Projects/pathbeat/s1.png"
+import s2 from "../../Assets/Projects/pathbeat/s2.png"
+import s3 from "../../Assets/Projects/pathbeat/s3.png"
+import s4 from "../../Assets/Projects/pathbeat/s4.png"
+import s5 from "../../Assets/Projects/pathbeat/s5.png"
+import s6 from "../../Assets/Projects/pathbeat/s6.png"
+import s7 from "../../Assets/Projects/pathbeat/s7.png"
+import s8 from "../../Assets/Projects/pathbeat/s8.png"
+import s9 from "../../Assets/Projects/pathbeat/s9.png"
+import s10 from "../../Assets/Projects/pathbeat/s10.png"
+
+import m1 from "../../Assets/Projects/meetup/s1.png"
+import m2 from "../../Assets/Projects/meetup/s2.png"
+import m3 from "../../Assets/Projects/meetup/s3.png"
+import m4 from "../../Assets/Projects/meetup/s4.png"
+import m5 from "../../Assets/Projects/meetup/s5.png"
+
+import b1 from "../../Assets/Projects/blog-book/s1.png"
+import b2 from "../../Assets/Projects/blog-book/s2.png"
+import b3 from "../../Assets/Projects/blog-book/s3.png"
+import b4 from "../../Assets/Projects/blog-book/s4.png"
+import b5 from "../../Assets/Projects/blog-book/s5.png"
+import b6 from "../../Assets/Projects/blog-book/s6.png"
+import b7 from "../../Assets/Projects/blog-book/s7.png"
+import b8 from "../../Assets/Projects/blog-book/s8.png"
 
 function Projects() {
   return (
@@ -17,76 +49,127 @@ function Projects() {
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
         </h1>
-        <p style={{ color: "white" }}>
+        <p style={{color: "white"}}>
           Here are a few projects I've worked on recently.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+        <Row style={{justifyContent: "center", paddingBottom: "10px"}}>
+          <Col md={5} className="project-card">
+            <ProjectCards
+              title="SkillShodh"
+              mainImg="https://www.blog.visitorqueue.com/wp-content/uploads/2022/04/alzHwS9W-1024x670.png"
+              smallDescription="SkillShodh is a comprehensive platform connecting students to skill-based internships. It provides personalized opportunities based on student skills, seamless communication with companies, and easy-to-apply features. The platform also emphasizes professional networking and real-world experience to enhance career growth."
+              gallery={[
+                i1, i2, i3, i4, i5, i6, i7, i8, i9, i10, i11
+              ]}
+              features={[
+                "Real-time matching",
+                "Personalized suggestions",
+                "Easy applications",
+                "Seamless communication"
+              ]}
+              technologies={[
+                "React.js",
+                "Node.js",
+                "Firebase",
+                "Bootstrap",
+                "Socket.io",
+                "Express",
+                "Supabase",
+                "MUI (Material UI)",
+                "Redux Toolkit"
+              ]}
+              ghLink="https://github.com/DhirajsGithub/skill-shodh-local"
+              demoLink="https://skillshodh.in/"
+            />
+          </Col>
+          <Col md={5} className="project-card">
+            <ProjectCards
+              title="Pathbeat"
+              smallDescription="Pathbeat is your ultimate travel companion for discovering cities and immersing yourself in local culture. This innovative application provides users with immersive audio tours, captivating video series, and personalized attraction recommendations, ensuring that every journey is enriching and unforgettable."
+              gallery={[
+                s1, s2, s3, s4, s5, s6, s7, s8, s9, s10
+              ]}
+              features={[
+                "Engaging audio tours",
+                "Captivating video series",
+                "Curated attraction recommendations",
+                "Safety tips and contacts"
+              ]}
+              technologies={[
+                "React Native",
+                "Axios",
+                "React Navigation",
+                "Firebase",
+                "React Query",
+                "Lodash",
+                "React Native Reanimated",
+                "Razorpay"
+              ]}
+
+
+              ios="https://apps.apple.com/in/app/pathbeat/id6670258755"
+            />
+
+          </Col>
+          <Col md={5} className="project-card">
+            <ProjectCards
+              title="Blog Book"
+              smallDescription="BlogSphere is a vibrant and inclusive platform designed for writers and readers to connect through the art of blogging. Here, individuals can share their thoughts, experiences, and expertise on a multitude of topics, from personal anecdotes to in-depth analyses of current events. Our goal is to create a nurturing space where creativity flourishes and meaningful conversations happen."
+              gallery={[
+               b1, b2, b3, b4, b5, b6, b7, b8
+              ]}
+              features={[
+                "Compose and share blogs",
+                "Private or public posts",
+                "Connect with the community",
+                "Explore member blogs",
+                "Track your activities",
+                "Get real-time notifications"
+              ]}
+              technologies={[
+                "Express.js",
+                "MongoDB",
+                "Mongoose",
+                "EJS",
+                "Passport.js",
+                "Node.js",
+                "Lodash",
+
+              ]}
+              ghLink="https://github.com/DhirajsGithub/Blog-Share-Store-Website" // Replace with your GitHub link
+              demoLink="https://blog-book.onrender.com/" // Replace with your demo link
+            />
+
+          </Col>
+          <Col md={5} className="project-card">
+            <ProjectCards
+              title="Meetup Platform"
+              mainImg="https://example.com/meetup-platform-main-image.png"
+              smallDescription="Meetup Platform is a Next.js-based application designed to help users create, join, and explore meetups seamlessly. With a user-friendly interface, it allows individuals to schedule meetings, add essential details, and engage in collaborative events."
+              gallery={[
+                m1, m2, m3, m4, m5
+              ]}
+              features={[
+                "Create and join meetups",
+                "User-friendly interface",
+                "Detailed meeting descriptions",
+                "Address-based search"
+              ]}
+              technologies={[
+                "Next.js",
+                "React.js",
+                "MongoDB",
+                "Node.js",
+                "Express.js",
+                "Fetch API",
+                "SSR"
+              ]}
+              ghLink="https://github.com/DhirajsGithub/React_module_14.2"
+              demoLink="https://react-module-14-2.vercel.app/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
-            />
-          </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
         </Row>
       </Container>
     </Container>
