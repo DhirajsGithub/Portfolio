@@ -41,6 +41,14 @@ import b6 from "../../Assets/Projects/blog-book/s6.png"
 import b7 from "../../Assets/Projects/blog-book/s7.png"
 import b8 from "../../Assets/Projects/blog-book/s8.png"
 
+import y1 from "../../Assets/Projects/yumtrux/s1.jpg"
+import y2 from "../../Assets/Projects/yumtrux/s2.jpg"
+import y3 from "../../Assets/Projects/yumtrux/s3.jpg"
+import y4 from "../../Assets/Projects/yumtrux/s4.jpg"
+import y5 from "../../Assets/Projects/yumtrux/s5.jpg"
+import y6 from "../../Assets/Projects/yumtrux/s6.jpg"
+import y7 from "../../Assets/Projects/yumtrux/s7.jpg"
+
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -109,8 +117,8 @@ function Projects() {
 
               ios="https://apps.apple.com/in/app/pathbeat/id6670258755"
             />
-
           </Col>
+
           <Col md={5} className="project-card">
             <ProjectCards
               title="Blog Book"
@@ -141,6 +149,44 @@ function Projects() {
             />
 
           </Col>
+
+          <Col md={5} className="project-card">
+          <ProjectCards 
+  title="Yumtruk App and Admin Panel" 
+  smallDescription="Yumtruk is a user-friendly food delivery app built with React Native (Expo). It allows users to browse menus, place orders, and get real-time delivery updates. The admin panel, developed with Node.js and Express.js, helps restaurant owners manage orders, track interactions, and engage customers. Integrated with Socket.io for instant notifications and secure payments via Stripe and PayPal, Yumtruk offers an efficient solution for both users and restaurants." 
+
+  gallery={[
+    y1, y2, y3, y4, y5, y6, y7
+  ]} 
+  features={[
+    "Real-time notifications using Socket.io", 
+    "Seamless payment integration with Stripe/PayPal", 
+    "User-friendly mobile interface built with React Native", 
+    "Robust admin panel for managing orders and users", 
+    "Secure authentication with JWT", 
+    "Image upload and management using Cloudinary"
+  ]} 
+  technologies={[
+    "React Native (Expo)", 
+    "Node.js", 
+    "Express.js", 
+    "MongoDB", 
+    "Mongoose", 
+    "Socket.io", 
+    "Stripe API", 
+    "PayPal API",
+    "Cloudinary",
+    "Firebase",
+    "JWT",
+  
+  ]} 
+  ghLink="https://github.com/DhirajsGithub/yum-trux" // Replace with your GitHub link 
+  apk="https://yumtruk-demo-link.com" // Replace with your demo link 
+/>
+
+          </Col>
+
+
           <Col md={5} className="project-card">
             <ProjectCards
               title="Meetup Platform"
