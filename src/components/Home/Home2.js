@@ -9,6 +9,8 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+
 
 function Home2() {
   return (
@@ -99,12 +101,12 @@ function Home2() {
              
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/dhiraj_0208/"
+                  href="https://leetcode.com/u/Dhirajs_leetcode/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <SiLeetcode />
                 </a>
               </li>
             </ul>

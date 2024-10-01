@@ -6,6 +6,8 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+
 
 function Footer() {
   let date = new Date();
@@ -53,12 +55,12 @@ function Footer() {
             
             <li className="social-icons">
               <a
-                href="https://www.instagram.com/dhiraj_0208/"
+                href="https://leetcode.com/u/Dhirajs_leetcode/"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <AiFillInstagram />
+                <SiLeetcode />
               </a>
             </li>
           </ul>
