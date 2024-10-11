@@ -116,6 +116,7 @@ function Projects() {
 
 
               ios="https://apps.apple.com/in/app/pathbeat/id6670258755"
+              android="https://play.google.com/store/apps/details?id=com.pathbeat&hl=en"
             />
           </Col>
 
