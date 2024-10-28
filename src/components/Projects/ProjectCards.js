@@ -83,7 +83,7 @@ function ProjectCards(props) {
          {props.ghLink && <Button variant="primary" href={props.ghLink} target="_blank" style={{marginRight: "10px"}}>
             <BsGithub /> &nbsp; {props.isBlog ? "Blog" : "GitHub"}
           </Button>}
-          {props.android && <Button variant="primary" href={props.ios} target="_blank" style={{marginRight: "10px"}}>
+          {props.android && <Button variant="primary" href={props.android} target="_blank" style={{marginRight: "10px"}}>
             <IoLogoGooglePlaystore /> &nbsp; { "Download on Android"}
           </Button>}
          {props.ios && <Button variant="secondary" href={props.ios} target="_blank" style={{marginRight: "10px"}}>
